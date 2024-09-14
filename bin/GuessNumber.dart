@@ -15,21 +15,29 @@ void main() {
 
 
     if (input < random) {
-      stdout.write('Your Guess is too low: Enter your Guess again: ');
-      input = int.parse(stdin.readLineSync()!);
 
-      if (input - random <= 5) {
-        print('Your geuss is very near!!!');
+      if ((random - input) <= 5) {
+        print('Your geuss is very near go forward!!!');
       }
+      else {
+        print('Your Guess is too low!!!');
+      }
+
+      stdout.write('Enter your Guess again: ');
+      input = int.parse(stdin.readLineSync()!);
 
     }
     else if (input > random) {
-      stdout.write('Your Guess is too high: Enter your Guess again: ');
-      input = int.parse(stdin.readLineSync()!);
-
-      if (input - random > 5) {
-        print('Your geuss is a little far!!!');
+      
+       if ((input - random) <= 5) {
+        print('Your geuss is very near go backward!!!');
       }
+      else {
+        print('Your geuss is too high!!!');
+      }
+
+      stdout.write('Enter your Guess again: ');
+      input = int.parse(stdin.readLineSync()!);
 
     }
   }
