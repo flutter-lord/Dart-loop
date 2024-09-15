@@ -14,6 +14,7 @@ void main() {
   int operand2;
   int answer;
   int correctAnswer = 0;
+  String output = '';
 
   for (int i = 1; i <= numberOfQuestions; i++) {
 
@@ -26,11 +27,13 @@ void main() {
 
       if ((operand1 - operand2) == answer) {
         print('You are correct!');
+        output += '$operand1 - $operand2 = $answer correct\n';
         correctAnswer++;
       }
       else {
         print('Your answer is wrong!');
         print('$operand1 - $operand2 should be ${operand1 - operand2}');
+        output += '$operand1 - $operand2 = $answer wrong\n';
       }
     }
     else {
@@ -39,18 +42,28 @@ void main() {
 
       if ((operand2 - operand1) == answer) {
         print('You are correct!');
+        output += '$operand2 - $operand1 = $answer correct\n';
         correctAnswer++;
       }
       else {
         print('Your answer is wrong!');
         print('$operand2 - $operand1 should be ${operand2 - operand1}');
+        output += '$operand2 - $operand2 = $answer wrong\n';
       }
     }
   }
+  
+  print('');
+  print('');
 
   final endTime = DateTime.now();
+  final diff = endTime.difference(startTime);
 
-  pr
+  print('Correct count is $correctAnswer .');
+  print('Test time is ${diff.inSeconds} seconds.');
+  print('');
+  print('');
+  print('$output');
 
 
 }
