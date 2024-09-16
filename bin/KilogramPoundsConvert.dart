@@ -7,7 +7,4 @@ void main() {
 
     print('$i\t\t\t\t\t\t\t${pounds.toStringAsFixed(1)}');
   }
-
-
-
 }
