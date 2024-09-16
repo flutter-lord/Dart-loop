@@ -22,39 +22,23 @@ void main () {
     value1 = Random().nextInt(10);
     value2 = Random().nextInt(10);
 
-    if (value1 > value2) {
-      stdout.write('What is $value1 + $value2:');
-      answer = int.parse(stdin.readLineSync()!);
-    
+     
+    stdout.write('What is $value1 + $value2:');
+    answer = int.parse(stdin.readLineSync()!);
 
     if ((value1 + value2) == answer) {
-        print('You are correct!\n');
-        output += '$value1 + $value2 = $answer correct\n';
+      print('You are correct\n');
+      output += '$value1 + $value2 = $answer correct\n';
         correctAnswer++;
       }
     else {
-        print('Your answer is wrong!');
+        print('You are wrong');
         print('$value1 + $value2 should be ${value1 + value2}\n');
         output += '$value1 + $value2 = $answer wrong\n';
       }
-    }
-    else {
-      stdout.write('What is $value2 + $value1: ');
-      answer = int.parse(stdin.readLineSync()!);
-
-      if ((value2 + value1) == answer) {
-        print('You are correct!\n');
-        output += '$value2 + $value1 = $answer correct\n';
-        correctAnswer++;
-      }
-    else {
-        print('Your answer is wrong!');
-        print('$value2 + $value1 should be ${value2 + value1}\n');
-        output += '$value2 + $value2 = $answer wrong\n';
-      }
-    }
- }
-
+  }
+    
+  
   print('');
   print('');
 
@@ -66,7 +50,4 @@ void main () {
   print('');
   print('');
   print('$output');
-
-
-
 }
