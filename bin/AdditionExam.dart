@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 void main () {
-  print('Welcome to Richie test\n');
+  print('Welcome to Richie test.com\n');
 
   stdout.write('Please enter the number of questions you will like to answer: ');
   int numberOfQuestions = int.parse(stdin.readLineSync()!);
