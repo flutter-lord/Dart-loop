@@ -1,6 +1,6 @@
 void main() {
 
-  double number = 1;
+  int number = 1;
   while (number * number < 12000) {
     number ++;
   }
