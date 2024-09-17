@@ -5,5 +5,4 @@ void main() {
     number ++;
   }
   print('The smallest number square that is greater than 12000 is $number');
-
 }
