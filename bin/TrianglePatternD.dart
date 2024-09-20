@@ -6,12 +6,12 @@ void main() {
 
    for (int j = 0; j < line - 1; j++) {
 
-     stdout.write(' ');
+     stdout.write('  ');
    }
 
     for (int i = 1; i <= (7 - line); i++) {
 
-     stdout.write('$i');
+     stdout.write('$i ');
 
     }
     print(''); 
