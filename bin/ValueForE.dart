@@ -14,9 +14,7 @@ void main () {
 
     }
 
-
     e += (1 / facorial);
-
   }
 
   print('Natural Logarithm base is: $e');
