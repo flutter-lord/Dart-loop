@@ -19,13 +19,8 @@ void main() {
         print('');
         count = 0;
       }  
-
     }
-   
   }
-
-
   print('');
   print('The total number of leap from year 101 to year 2100 is $leapYear');
-
 }
