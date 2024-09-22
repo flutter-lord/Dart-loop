@@ -8,5 +8,5 @@ void main() {
 
   //int base10 = int.parse("101011", radix: 2);
 
-  print('$decimal in base two is $binary');
+  print('$decimal base ten  is $binary base two');
 }
