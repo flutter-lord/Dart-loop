@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   stdout.write('Initial Amount Deposited: ');
-  String initialAmount = stdin.readLineSync()!;
+  double initialAmount = double.parse(stdin.readLineSync()!);
 
   stdout.write('Enter annual percentage yield: ');
   double annualPercentage = double.parse(stdin.readLineSync()!);
@@ -14,7 +14,7 @@ void main() {
   double amount = 10000 ;
 
   for (int i = 1; i <= months; i++) {
-    amount =  amount + (amount * monthlyRate);
+    amount =  initialAmount + ( 4 * monthlyRate);
 
     print('After $i month(s), The CD is worth \$${amount.toStringAsFixed(2)}');
   }
