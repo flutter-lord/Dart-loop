@@ -10,10 +10,5 @@ void main() {
   while (random1 != random2) {
     print('The lottery number is $lottery');
     break;
-  }
-    
-
-    
-
-    
+  }    
 }
