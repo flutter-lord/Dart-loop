@@ -20,7 +20,7 @@ void main() {
   for (int i = 1; i <= months; i++) {
     amount = (initialAmount + amount) * det;
 
-    print('The amount after $i month is \$$amount');
+    print('The amount after $i month is \$${amount.toStringAsFixed(2)}');
 
   }
  
