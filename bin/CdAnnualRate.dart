@@ -14,7 +14,12 @@ void main() {
   double amount = 10000 ;
 
   for (int i = 1; i <= months; i++) {
-    amount =  initialAmount + ( 4 * monthlyRate);
+    if (i== 1) {
+      amount =  initialAmount + ( initialAmount * monthlyRate);
+    }
+    else {
+      amount = amount + (amount * monthlyRate);
+    }
 
     print('After $i month(s), The CD is worth \$${amount.toStringAsFixed(2)}');
   }
